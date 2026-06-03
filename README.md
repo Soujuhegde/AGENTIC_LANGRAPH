@@ -1,8 +1,6 @@
 # Agentic LangGraph Chatbot
 
-An interactive agentic chatbot built using **LangGraph**, **LangChain**, and **Groq Cloud LLMs**. The agent is equipped with dynamic tool-calling capabilities (web search via Tavily and a custom multiplication tool) and manages conversation state through a robust graph-based workflow.
-
----
+An interactive agentic chatbot built using **LangGraph**, **LangChain**, and **Groq Cloud LLMs**. The agent is equipped with dynamic tool-calling capabilities (web search via Tavily and a custom multiplication tool) and manages conversation state through a robust graph-based workflow. 
 
 ## 🚀 Key Features
 
@@ -13,8 +11,6 @@ An interactive agentic chatbot built using **LangGraph**, **LangChain**, and **G
 *   **Looping Execution Flow:** The agent routes tool results back to the LLM to synthesize the final answer before ending the execution.
 *   **Fast Inference:** Powered by Groq's low-latency `llama-3.1-8b-instant` or `llama-3.3-70b-versatile` models.
 *   **Modern Python Tooling:** Uses `uv` for fast, reproducible dependency resolution and virtual environment management.
-
----
 
 ## 🛠️ Graph Architecture
 
@@ -34,7 +30,6 @@ graph TD
     * If the LLM responds directly with a message, it routes to **`END`**.
 3. **`tools`**: Executes the requested tools and routes results back to `tool_calling_llm` to synthesize the final response.
 
----
 
 ## 📋 Prerequisites
 
@@ -42,8 +37,6 @@ graph TD
 *   [uv](https://github.com/astral-sh/uv) (Recommended package and environment manager)
 *   A Groq Cloud API Key (Get one from [Groq Console](https://console.groq.com/))
 *   A Tavily API Key (Get one from [Tavily AI](https://tavily.com/))
-
----
 
 ## ⚙️ Installation & Setup
 
